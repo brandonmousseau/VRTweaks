@@ -52,7 +52,7 @@ namespace VRTweaks
         }
 
         [HarmonyPatch(typeof(uGUI_SceneLoading), nameof(uGUI_SceneLoading.SetFastLoadMode))]
-        class boo
+        class uGUI_SceneLoading_SetFastLoadMode_Patch
         {
             static bool Prefix(uGUI_SceneLoading __instance, bool useFastLoadMode)
             {
