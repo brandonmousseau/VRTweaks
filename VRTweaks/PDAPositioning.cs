@@ -7,13 +7,13 @@ namespace VRTweaks
     public class PDAPositioning
     {
 
-        private static float pdaXOffset = -0.15f;
-        private static float pdaXRot = 220f;
-        private static float pdaYRot = 30f;
-        private static float pdaZRot = 75f;
+        static float pdaXOffset = -0.21f;
+        static float pdaXRot = 223f;
+        static float pdaYRot = 21f;
+        static float pdaZRot = 76.5f;
 
-        private static GameObject leftHandTarget;
-        private static float lastVrOptionsPdaDistance = 0f;
+        static GameObject leftHandTarget;
+        static float lastVrOptionsPdaDistance = 0f;
 
         // Centers the target transform on the player and moves the
         // arm distance to the passed position
