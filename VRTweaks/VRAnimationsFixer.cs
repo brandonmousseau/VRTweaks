@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VRTweaks
 {
-    [HarmonyPatch(typeof(GameOptions), "GetVrAnimationMode")]
+    [HarmonyPatch(typeof(VRGameOptions), nameof(VRGameOptions.GetVrAnimationMode))]
     public static class VRAnimationsFixer
     {
         [HarmonyPostfix]

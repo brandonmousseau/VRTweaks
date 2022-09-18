@@ -48,6 +48,9 @@
       <HintPath>$(CommonDir)SubnauticaZero\BepInEx\core\BepInEx.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>$(CommonDir)SubnauticaZero\SubnauticaZero_Data\Managed\FMODUnity.dll</HintPath>
+    </Reference>
     <Reference Include="PlatformInputDefault">
       <HintPath>$(CommonDir)SubnauticaZero\SubnauticaZero_Data\Managed\PlatformInputDefault.dll</HintPath>
     </Reference>

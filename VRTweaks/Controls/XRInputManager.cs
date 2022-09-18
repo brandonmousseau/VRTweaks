@@ -4,8 +4,6 @@ using UnityEngine.XR;
 using HarmonyLib;
 using System;
 using Platform.Utils;
-using FMODUnity;
-using UnityEngine.Events;
 
 namespace VRTweaks
 {

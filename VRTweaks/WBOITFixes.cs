@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace VRTweaks
 {
@@ -18,14 +19,11 @@ namespace VRTweaks
             __instance.wboitTexture2 = new RenderTexture(__instance.camera.pixelWidth, __instance.camera.pixelHeight, 0, RenderTextureFormat.ARGBHalf, RenderTextureReadWrite.Linear);
             __instance.wboitTexture2.name = "WBOIT TexB";
 
+            WBOIT.renderTargetIdentifiers[0] = 2;
+            WBOIT.renderTargetIdentifiers[1] = new RenderTargetIdentifier(__instance.wboitTexture1);
+            WBOIT.renderTargetIdentifiers[2] = new RenderTargetIdentifier(__instance.wboitTexture2);
             __instance.compositeMaterial.SetTexture(__instance.texAPropertyID, __instance.wboitTexture1);
             __instance.compositeMaterial.SetTexture(__instance.texBPropertyID, __instance.wboitTexture2);
-            __instance.colorBuffers = new RenderBuffer[]
-            {
-                __instance.wboitTexture1.colorBuffer,
-                __instance.wboitTexture1.colorBuffer,
-                __instance.wboitTexture2.colorBuffer
-            };
 
             return false;
         }
